@@ -2,7 +2,7 @@
 A simple ERP system for small businesses for construction.
 
 
-## Creamos el entorno virtual
+## Run a local server
 ```bash
 source env/bin/activate
 python3 manage.py runserver
@@ -10,7 +10,7 @@ python3 manage.py runserver
 
 
 
-# Mis datos de contacto
+# My Contact Data
 ```
 Marlon Falcón Hernández | España | Madrid
 * ERP, CRM y Software: https://www.marlonfalcon.com
