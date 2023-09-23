@@ -21,5 +21,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('dashboard', views.dashboard, name='dashboard'),
     path('', views.home, name='home'),
-
 ]
