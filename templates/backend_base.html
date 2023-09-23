@@ -5,52 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BIMERP</title>
+    <title>BIMERP | ERP for construction</title>
     
     <!-- 3ros -->
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css"/>
-
 
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
     <main>
-  
-      <div class="container-fluid">
-        <div class="row min-vh-100 flex-column flex-md-row">
-          <aside class="col-12 col-md-3 col-xl-2 p-0 bg-dark ">
-            <nav class="navbar navbar-expand-md navbar-dark bd-dark flex-md-column flex-row align-items-center py-2 text-center sticky-top " id="sidebar">
-              <div class="text-center p-3">
-                <img src="" alt="profile picture" class="img-fluid rounded-circle my-4 p-1 d-none d-md-block shadow"/>
-               <a href="#" class="navbar-brand mx-0 font-weight-bold  text-nowrap" >XcentPupil</a>
-              </div>
-                  <button type="button" class="navbar-toggler border-0 order-1" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              
-              <div class="collapse navbar-collapse order-last" id="nav">
-                <ul class="navbar-nav flex-column w-100 justify-content-center">
-                <li class="nav-item">
-                  <a href="#" class="nav-link active"> Edit Profile</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link"> Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link"> Tasks </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link"> Users Info </a>
-                </li>
-              </ul>
-              </div>      
-            </nav>   
-          </aside>
-        </div>
-      </div>
-
-
-    </main>
+      {% block content %}
+      {% endblock %}
+  </main>
 	<script src="index.js"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"  crossorigin="anonymous"></script>
   </body>
 </html>

@@ -1,5 +1,10 @@
 from django.shortcuts import render
 
-def backend(request):
+def dashboard(request):
     context = {}
-    return render(request, 'backend_base.html', context)
+    return render(request, 'dashboard.html', context)
+
+
+def home(request):
+    context = {}
+    return render(request, 'home.html', context)
