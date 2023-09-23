@@ -1,8 +1,8 @@
 from django.shortcuts import render
 
-def dashboard(request):
+def admin(request):
     context = {}
-    return render(request, 'dashboard.html', context)
+    return render(request, 'admin.html', context)
 
 
 def home(request):
